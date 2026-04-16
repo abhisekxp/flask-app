@@ -15,6 +15,6 @@ steps:
     - 'asia-south2-docker.pkg.dev/gcp-cicd-demo-493513/pyapprepo-artifact/pyappimage:latest'
     - '--region'
     - 'asia-south2'
-    - '--allow-unauthenticated'
+    - '--no-invoker-iam-check'
 options:
   logging: CLOUD_LOGGING_ONLY
